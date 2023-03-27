@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang = "en">
+<meta charset = "UTF-8">
+	
+	<head>
+		<title>	University Registeration</title>
+		<style>
+			.table1 {
+					margin-left:auto;
+					margin-right:auto;
+			}
+			
+			td {
+					border:1px solid black;
+					text-align:top;
+			}
+			
+			h1 {
+				text-align: center;
+				font-size: 40px;
+			}
+			#body1 {
+				background-color:#add8e6;
+			}
+			#body2{
+				background-color:#f08080;
+			}
+
+		</style>
+	</head>
+	
+	<body>
+		<h1>University Registeration</h1>
+		<table class = "table1">
+			<td>
+				<form>
+				<div id = "body1">
+					<fieldset>
+						<legend id = "legend">Personal Details: </legend>  
+						<label for = "f_name">First Name: </label>
+							<input id = "f_name" type = "text" size = "18"
+									placeholder = "Enter your name here....."
+									name = "firstname" required><br><br>
+									
+						<label for = "f_name">Last Name: </label>
+							<input id = "l_name" type = "text" size = "18"
+									placeholder = "Enter your name here....." 
+									name = "lastname" required><br> <br>
+									
+						<label for = "mail">E-mail: </label>
+							<input id = "mail" name = "Mail" type = "email" size = "18"
+									placeholder = "Enter your mail address..." required><br><br>
+									
+						<label for = "password">Password: </label>
+							<input id = "password" name = "Password" type = "password" size = "18" required>
+						
+						<br><br> Level of Study -<br> 
+						<input id = "olevel" type = "radio" name = "level" required>
+							<label for = "olevel">O Level</label>
+						<input id = "Alevel" type = "radio" name = "level" >
+							<label for = "olevel">A Level</label>
+						<input id = "ug" type = "radio" name = "level" >
+							<label for = "ug">Undergraduate</label>
+						<input id = "Alevel" type = "radio" name = "level" >
+							<label for = "olevel">Postgraduate</label>
+					</fieldset>
+					
+					<fieldset>
+						<label for = "notes"> Any Comments: </label><br>
+						<textarea id = "notes" name = "comments" rows = "8" cols ="55">Write any comments....</textarea>
+					
+					<br><br>
+					
+					<label for = "course">Course Name: </label>
+						<select name = "coursename" id = "course" required>
+							<option value = "computerscience">Computer Science</option>
+							<option value = "softwareenginnering" selected>Software Engineering</option>
+							<option value = "ds&ai">DataScience & AI</option>
+							<option value = "bis">BIS</option>
+						</select>
+					<br><br>
+					
+					<label for ="terms"> Terms & Conditions   </label>
+						<input id = "terms" name ="Terms" type = "checkbox" required>
+					</fieldset>
+					</div>
+					
+					<div id = "body2">
+					<fieldset>
+					<input type = "reset" name = "button1" value = "Reset" required>
+					<input type = "submit" name = "button2" value = "Submit" required>
+					</fieldset>
+					</div>
+				</form>
+			</td>
+		</table>
+	</body>
+</html>
